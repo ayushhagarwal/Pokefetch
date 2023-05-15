@@ -1,0 +1,33 @@
+<!-- search.component.html -->
+<div class="flex justify-center mt-20">
+  <form class="flex items-center">
+    <input
+      type="text"
+      placeholder="Search Pokemon"
+      [(ngModel)]="searchTerm"
+      name="searchTerm"
+      class="py-2 px-10 rounded-l-md focus:outline-none"
+    />
+    <button
+      type="submit"
+      (click)="search()"
+      class="bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded-r-md"
+    >
+      Search
+    </button>
+  </form>
+</div>
+
+<div class="flex justify-center mt-10">
+  <div
+    *ngIf="pokemonType && pokemonType.length > 0"
+    class="max-w-sm rounded overflow-hidden shadow-lg"
+  >
+    <div class="flex items-center flex-col px-6 py-4 bg-green-300">
+      <div class="font-bold text-xl mb-2">Type</div>
+      <p class="text-gray-700 text-base">
+        {{ pokemonType }}
+      </p>
+    </div>
+  </div>
+</div>
