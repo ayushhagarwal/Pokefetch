@@ -1,27 +1,48 @@
-# PokemonDetails
+# Pokefetch: A Pokémon Type Finder with Angular and PokeAPI
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.3.
+<!-- ![Pokefetch Banner](./assets/banner.png) -->
 
-## Development server
+Pokefetch is an Angular project that allows users to fetch and display the type of a Pokémon based on user input. It integrates with the PokeAPI, an open API that provides Pokémon data. With Pokefetch, users can easily search for Pokémon and instantly retrieve their respective types.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Features
 
-## Code scaffolding
+- User-friendly interface for searching Pokémon by name
+- Integration with the PokeAPI to fetch Pokémon data
+- Display of Pokémon type on the webpage
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Technologies Used
 
-## Build
+- Angular
+- TypeScript
+- HTML
+- Tailwind CSS
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Getting Started
 
-## Running unit tests
+Follow these steps to get the Pokefetch project up and running on your local machine:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. Clone this repository: `git clone https://github.com/ayushhagarwal/Pokefetch.git`
+2. Navigate to the project directory: `cd Pokefetch`
+3. Install the dependencies: `npm install`
+4. Start the development server: `ng serve`
+5. Open your browser and visit: `http://localhost:4200`
 
-## Running end-to-end tests
+## Contributing
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Contributions are welcome! If you have any ideas, suggestions, or bug reports, please open an issue or submit a pull request.
 
-## Further help
+## License
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+This project is licensed under the [MIT License](LICENSE).
+
+## Acknowledgements
+
+- [PokeAPI](https://pokeapi.co/)
+- [Angular](https://angular.io/)
+- [RxJS](https://rxjs.dev/)
+
+## Contact
+
+For any questions or inquiries, please feel free to reach out to me at [reachatayush@gmail.com].
+
+Happy Pokémon searching with Pokefetch! 🌟🔍🎮
