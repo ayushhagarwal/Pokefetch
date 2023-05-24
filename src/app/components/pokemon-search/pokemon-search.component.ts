@@ -2,12 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { PokemonService } from '../../service/pokemon.service';
 @Component({
   selector: 'app-pokemon-search',
-  templateUrl: './pokemon-search.component.html',
-  styleUrls: ['./pokemon-search.component.css']
+  templateUrl: './pokemon-search.component.html'
 })
 export class PokemonSearchComponent implements OnInit {
 
   pokemonType: string;
+  isAPICallErrored: boolean;
 
   constructor(private pokemonService: PokemonService) { }
 
@@ -19,8 +19,14 @@ export class PokemonSearchComponent implements OnInit {
     this.pokemonService.getPokemonType(this.searchTerm).subscribe(
       type => {
         this.pokemonType = type;
+        this.isAPICallErrored = false;
       },
-      error => console.log(error)
+      error => {
+        if(error){
+          this.isAPICallErrored = true;
+          console.log(this.isAPICallErrored);
+        }
+      }
     );
   }
 
