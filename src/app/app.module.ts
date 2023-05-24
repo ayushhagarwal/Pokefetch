@@ -8,12 +8,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { PokemonService } from './service/pokemon.service';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { PokemonSearchComponent } from './components/pokemon-search/pokemon-search.component';
+import { ErrorMessageComponent } from './components/error-message/error-message.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    PokemonSearchComponent
+    PokemonSearchComponent,
+    ErrorMessageComponent
   ],
   imports: [
     BrowserModule,
